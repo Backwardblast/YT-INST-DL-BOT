@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import yt_dlp
 import instaloader
 import ffmpeg
@@ -6,8 +7,16 @@ import requests
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
+# Загружаем переменные из .env файла
+load_dotenv()
+
+
 # Получаем токен из переменной окружения
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+
+# Проверяем, что токен загружен
+if TELEGRAM_BOT_TOKEN is None:
+    raise ValueError("Токен Telegram не найден. Убедитесь, что переменная TELEGRAM_BOT_TOKEN задана в .env файле.")
 
 # Функция для безопасного удаления файла
 def safe_remove(filepath):
