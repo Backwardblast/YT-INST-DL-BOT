@@ -1,6 +1,6 @@
-requests
-yt-dlp
-instaloader
-ffmpeg-python
-python-telegram-bot
-python-dotenv
+python-telegram-bot==20.5
+yt-dlp==2023.10.13
+instaloader==4.10
+aiohttp==3.8.5
+python-dotenv==1.0.0
+httpx==0.24.1
