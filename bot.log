@@ -1,0 +1,869 @@
+2025-01-20 02:57:16,018 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getMe "HTTP/1.1 200 OK"
+2025-01-20 02:57:16,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 02:57:16,065 - telegram.ext.Application - INFO - Application started
+2025-01-20 02:57:20,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 02:57:20,233 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-20 02:57:25,817 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 02:57:25,817 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-20 02:57:27,946 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 02:57:28,188 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:00:36,270 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getMe "HTTP/1.1 200 OK"
+2025-01-20 03:00:36,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 03:00:36,317 - telegram.ext.Application - INFO - Application started
+2025-01-20 03:00:38,177 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:00:38,177 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-20 03:00:38,177 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-20 03:01:11,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getMe "HTTP/1.1 200 OK"
+2025-01-20 03:01:11,885 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 03:01:11,886 - telegram.ext.Application - INFO - Application started
+2025-01-20 03:01:16,054 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 03:01:16,054 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-20 03:01:21,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 03:01:21,623 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-20 03:01:26,334 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 03:01:26,334 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-20 03:01:33,156 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 03:03:25,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getMe "HTTP/1.1 200 OK"
+2025-01-20 03:03:25,882 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 03:03:25,883 - telegram.ext.Application - INFO - Application started
+2025-01-20 03:03:30,013 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 03:03:30,014 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-20 03:03:35,576 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 03:03:35,577 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-20 03:03:42,392 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAGSHxxj9goInF3h4d26bhOUy3WuvLtaPe0/getUpdates "HTTP/1.1 409 Conflict"
+2025-01-20 03:03:47,507 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-20 03:03:47,880 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7547275862:update_fetcher' coro=<Application._update_fetcher() running at C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py:1248> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-01-20 03:03:47,881 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Updater:start_polling:polling_task' coro=<Updater._network_loop_retry() running at C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py:771> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup()]>
+2025-01-20 03:06:13,275 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getMe "HTTP/1.1 200 OK"
+2025-01-20 03:06:13,313 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 03:06:13,315 - telegram.ext.Application - INFO - Application started
+2025-01-20 03:06:17,614 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:06:17,681 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:07:18,424 - __main__ - ERROR - Ошибка Instagram: JSON Query to graphql/query: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2025-01-20 03:09:41,686 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:09:41,725 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:09:41,860 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:09:41,860 - __main__ - ERROR - Не удалось скачать видео: https://www.instagram.com/reel/DDwrq0IoNVK/?igsh=OHVmbTdtcDFjdnlx
+2025-01-20 03:09:41,943 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:09:42,100 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Application:7547275862:update_fetcher' coro=<Application._update_fetcher() done, defined at C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py:1246> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "D:\Bot\shortsdownload_bot\bot1.py", line 155, in <module>
+    main()
+  File "D:\Bot\shortsdownload_bot\bot1.py", line 152, in main
+    application.run_polling()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 868, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+    ...<14 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1088, in __run
+    loop.run_until_complete(self.updater.stop())  # type: ignore[union-attr]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 707, in run_until_complete
+    self.run_forever()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 678, in run_forever
+    self._run_once()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2033, in _run_once
+    handle._run()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1248, in _update_fetcher
+    await self.__update_fetcher()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1244, in __update_fetcher
+    await self.__process_update_wrapper(update)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1259, in __process_update_wrapper
+    await self._update_processor.process_update(update, self.process_update(update))
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_baseupdateprocessor.py", line 157, in process_update
+    await self.do_process_update(update, coroutine)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_baseupdateprocessor.py", line 182, in do_process_update
+    await coroutine
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bot\shortsdownload_bot\bot1.py", line 120, in handle_message
+    video_path = await download_video(url)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bot\shortsdownload_bot\bot1.py", line 81, in download_video
+    post = instaloader.Post.from_shortcode(loader.context, shortcode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\structures.py", line 207, in from_shortcode
+    post._node = post._full_metadata
+                 ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\structures.py", line 345, in _full_metadata
+    self._obtain_metadata()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\structures.py", line 322, in _obtain_metadata
+    pic_json = self._context.doc_id_graphql_query(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "8845758582119845", {"shortcode": self.shortcode}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )["data"]["xdt_shortcode_media"]
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 543, in doc_id_graphql_query
+    resp_json = self.get_json('graphql/query',
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                              use_post=True)
+                              ^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 411, in get_json
+    self.do_sleep()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 367, in do_sleep
+    time.sleep(min(random.expovariate(0.6), 15.0))
+KeyboardInterrupt
+2025-01-20 03:12:32,852 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getMe "HTTP/1.1 200 OK"
+2025-01-20 03:12:32,891 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 03:12:32,892 - telegram.ext.Application - INFO - Application started
+2025-01-20 03:12:41,832 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:12:41,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:12:51,876 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:13:01,916 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:13:11,956 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:13:21,999 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:13:24,189 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:13:24,245 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:13:32,038 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:13:42,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:13:52,118 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:14:02,165 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:14:06,453 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:14:12,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:14:22,280 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:14:32,318 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:14:42,362 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:14:42,363 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_async\connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_async\http11.py", line 136, in handle_async_request
+    raise exc
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_async\http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_async\http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_async\http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.READ_NUM_BYTES, timeout=timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_httpxrequest.py", line 293, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_transports\default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_baserequest.py", line 334, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\request\_httpxrequest.py", line 317, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ReadError: 
+2025-01-20 03:14:53,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:15:03,617 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:15:13,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:15:23,802 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:15:33,858 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:15:43,915 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:15:53,970 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:16:04,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:16:43,414 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getMe "HTTP/1.1 200 OK"
+2025-01-20 03:16:43,461 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 03:16:43,462 - telegram.ext.Application - INFO - Application started
+2025-01-20 03:16:51,309 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:16:51,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:17:01,357 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:17:11,404 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:17:13,474 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:17:13,543 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:17:21,452 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:17:31,499 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:17:35,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:17:41,551 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:17:51,598 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:18:01,645 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:18:11,692 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:18:21,738 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:18:31,785 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:18:41,831 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:18:51,878 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:19:01,925 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:19:11,972 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:19:22,018 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:19:32,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:19:42,113 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:19:55,987 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getMe "HTTP/1.1 200 OK"
+2025-01-20 03:19:56,033 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 03:19:56,034 - telegram.ext.Application - INFO - Application started
+2025-01-20 03:20:01,143 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:20:01,348 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:20:05,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:20:05,881 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:20:10,592 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:20:11,193 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:20:21,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:20:31,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:20:41,340 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:20:51,387 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:21:01,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:21:10,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:21:10,138 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-20 03:21:10,138 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-20 03:22:06,055 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getMe "HTTP/1.1 200 OK"
+2025-01-20 03:22:06,101 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-20 03:22:06,102 - telegram.ext.Application - INFO - Application started
+2025-01-20 03:22:11,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:22:11,950 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:22:21,871 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:22:22,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:22:22,503 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:22:31,921 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:22:33,032 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:22:41,970 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:22:52,028 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:23:02,092 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:23:12,145 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:23:14,082 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:23:14,287 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:25:44,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:25:44,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:25:44,844 - __main__ - WARNING - Файл слишком большой: downloads\youtube_video_auDfihI06xc.mp4
+2025-01-20 03:25:44,859 - __main__ - INFO - Файл downloads\youtube_video_auDfihI06xc.mp4 удалён.
+2025-01-20 03:25:44,922 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/sendMessage "HTTP/1.1 200 OK"
+2025-01-20 03:25:55,846 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:25:55,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7547275862:AAFdSOlTpNOgUJFOrrdIUgaMQN0kLCH57yo/getUpdates "HTTP/1.1 200 OK"
+2025-01-20 03:25:55,953 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-20 03:25:55,953 - telegram.ext.Application - CRITICAL - Fetching updates was aborted due to KeyboardInterrupt(). Suppressing exception to ensure graceful shutdown.
+Traceback (most recent call last):
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 671, in stop
+    self.__update_fetcher_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1248, in _update_fetcher
+    await self.__update_fetcher()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1244, in __update_fetcher
+    await self.__process_update_wrapper(update)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1259, in __process_update_wrapper
+    await self._update_processor.process_update(update, self.process_update(update))
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_baseupdateprocessor.py", line 157, in process_update
+    await self.do_process_update(update, coroutine)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_baseupdateprocessor.py", line 182, in do_process_update
+    await coroutine
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bot\shortsdownload_bot\bot1.py", line 158, in handle_message
+    video_path = await download_video(url)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bot\shortsdownload_bot\bot1.py", line 79, in download_video
+    info_dict = ydl.extract_info(url, download=True)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1626, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1637, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1793, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1852, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3024, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 177, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3474, in process_info
+    partial_success, real_download = self.dl(fname, new_info)
+                                     ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3212, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 464, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\hls.py", line 381, in real_download
+    return self.download_and_append_fragments(ctx, fragments, info_dict)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\fragment.py", line 513, in download_and_append_fragments
+    download_fragment(fragment, ctx)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\fragment.py", line 462, in download_fragment
+    if not self._download_fragment(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+            ctx, fragment['url'], info_dict, headers, info_dict.get('request_data')):
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\fragment.py", line 124, in _download_fragment
+    success, _ = ctx['dl'].download(fragment_filename, fragment_info_dict)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 464, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 368, in real_download
+    return download()
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 250, in download
+    data_block = ctx.data.read(block_size if not is_test else min(block_size, data_len - byte_counter))
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_requests.py", line 143, in read
+    return self.fp.read(amt, decode_content=True)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py", line 955, in read
+    data = self._raw_read(amt)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py", line 879, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\response.py", line 862, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+           ~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 473, in read
+    return self._read_chunked(amt)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 597, in _read_chunked
+    value.append(self._safe_read(amt))
+                 ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 640, in _safe_read
+    data = self.fp.read(amt)
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\MAXIMZMEYPRO\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2025-01-20 03:25:55,966 - telegram.ext.Application - INFO - Application.stop() complete
